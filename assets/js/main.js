@@ -33,30 +33,30 @@ document.addEventListener('DOMContentLoaded', () => {
   const bundleData = [
     {
       index: 0,
-      title: '1 Box (14 Daily Heart-O-Safe Shots)',
-      shots: 14,
+      title: '1 Pack (Pack of 30 Shots for 30 Days)',
+      shots: 30,
       price: 899,
       original: 1299,
       discount: '31% की छूट',
-      desc: '2 Weeks Cardio Arterial & BP Starter Pack'
+      desc: '1 Month Starter: Pack of 30 Shots for 30 Days'
     },
     {
       index: 1,
-      title: '2 Boxes (28 Daily Heart-O-Safe Shots - 1 Month)',
-      shots: 28,
+      title: '2 Packs (60 Days Course - 2x Pack of 30 Shots for 30 Days)',
+      shots: 60,
       price: 1599,
       original: 2598,
       discount: '38% की सबसे बड़ी छूट',
-      desc: 'Most Popular: Complete 1 Month Arterial & Cholesterol Cleanse'
+      desc: 'Most Popular: 60 Days Complete Arterial & Cholesterol Cleanse'
     },
     {
       index: 2,
-      title: '4 Boxes (56 Daily Heart-O-Safe Shots - 2 Months)',
-      shots: 56,
+      title: '4 Packs (120 Days Course - 4x Pack of 30 Shots for 30 Days)',
+      shots: 120,
       price: 2899,
       original: 5196,
       discount: '44% की महा बचत',
-      desc: 'Best Value: 2 Months Plaque Dissolution & Cardiovascular Stamina'
+      desc: 'Best Value: 120 Days Plaque Dissolution & Cardiovascular Stamina'
     }
   ];
 
