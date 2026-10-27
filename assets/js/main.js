@@ -179,6 +179,14 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       openModal(codModal);
+      if (typeof window.fbq === 'function') {
+        const bundle = bundleData[selectedBundleIndex] || bundleData[1];
+        window.fbq('track', 'InitiateCheckout', {
+          content_name: bundle.title,
+          value: bundle.price,
+          currency: 'INR'
+        });
+      }
     });
   });
 
@@ -244,6 +252,26 @@ document.addEventListener('DOMContentLoaded', () => {
         `City/State: ${cityStateText}`
       );
       waShareBtn.href = `https://wa.me/919321456789?text=${waText}`;
+      waShareBtn.onclick = () => {
+        if (typeof window.fbq === 'function') {
+          window.fbq('trackCustom', 'WhatsAppLeadContact', {
+            order_id: orderId,
+            pack: packTitle
+          });
+        }
+      };
+    }
+
+    // Meta Pixel: Track Lead Event (ID: 1315754011931343)
+    if (typeof window.fbq === 'function') {
+      window.fbq('track', 'Lead', {
+        content_name: packTitle,
+        value: amount,
+        currency: 'INR',
+        content_category: 'Cardio Shots',
+        order_id: orderId
+      });
+      console.log('Meta Pixel Lead tracked:', { packTitle, amount, orderId });
     }
 
     closeModal(codModal);
