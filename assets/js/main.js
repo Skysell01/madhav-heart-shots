@@ -33,34 +33,25 @@ document.addEventListener('DOMContentLoaded', () => {
   const bundleData = [
     {
       index: 0,
-      title: '1 Pack (Pack of 30 Shots for 30 Days)',
+      title: '1 Pack (30 Days - 30 Sachets of 20ml)',
       shots: 30,
-      price: 899,
-      original: 1299,
-      discount: '31% की छूट',
-      desc: '1 Month Starter: Pack of 30 Shots for 30 Days'
+      price: 1199,
+      original: 1999,
+      discount: '40% की छूट',
+      desc: '1 Month Starter: 30 Daily Sachets (20ml Each) for 30 Days'
     },
     {
       index: 1,
-      title: '2 Packs (60 Days Course - 2x Pack of 30 Shots for 30 Days)',
+      title: '2 Packs (60 Days Course - 60 Sachets of 20ml)',
       shots: 60,
-      price: 1599,
-      original: 2598,
-      discount: '38% की सबसे बड़ी छूट',
+      price: 1999,
+      original: 3998,
+      discount: '50% की सबसे बड़ी छूट',
       desc: 'Most Popular: 60 Days Complete Arterial & Cholesterol Cleanse'
-    },
-    {
-      index: 2,
-      title: '4 Packs (120 Days Course - 4x Pack of 30 Shots for 30 Days)',
-      shots: 120,
-      price: 2899,
-      original: 5196,
-      discount: '44% की महा बचत',
-      desc: 'Best Value: 120 Days Plaque Dissolution & Cardiovascular Stamina'
     }
   ];
 
-  let selectedBundleIndex = 1; // Default: 2 Boxes (Most Popular)
+  let selectedBundleIndex = 1; // Default: 2 Packs (60 Days Course - Most Popular)
 
   function updateBundleState(index) {
     selectedBundleIndex = index;

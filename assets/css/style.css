@@ -476,6 +476,20 @@ input, select, textarea {
   overflow: hidden;
   box-shadow: var(--shadow-md);
 }
+.hero-single-image-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+.hero-single-image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
 .gallery-badge {
   position: absolute;
   top: 16px;
@@ -738,8 +752,8 @@ input, select, textarea {
 }
 .bundle-options-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
 }
 .bundle-card {
   position: relative;
